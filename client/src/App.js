@@ -1,10 +1,23 @@
 import React from 'react'
+import Navbar from './components/Drawer/Navbar'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import profile from './pages/Profile'
+import team from './pages/Team'
+import company from './pages/Company'
+import './App.css'
 
 const App = () => {
   return (
-    <div>
-      <h1>App</h1>
-    </div>
+    <>
+    <Router>
+      <Navbar />
+        <Switch>
+          <Route path='/' exact component={profile} />
+          <Route path='/team' component={team} />
+          <Route path='/company' component={company} />
+        </Switch>
+    </Router>
+    </>
   )
 }
 
