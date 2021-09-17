@@ -3,21 +3,21 @@ import * as AiIcons from "react-icons/ai";
 
 export const SidebarData = [
     {
-        title: 'Profile',
+        title: 'Home',
         path: '/',
-        icon: <AiIcons.AiFillProfile />,
+        icon: <AiIcons.AiFillHome />,
         className: 'nav-text'
     },
     {
-        title: 'Team',
-        path: '/team',
+        title: 'Goals',
+        path: '/goals',
         icon: <AiIcons.AiOutlineTeam />,
         className: 'nav-text'
     },
     {
-        title: 'Company',
-        path: '/company',
-        icon: <AiIcons.AiFillHome/>,
+        title: 'Questionnaire',
+        path: '/questionnaire',
+        icon: <AiIcons.AiOutlineForm/>,
         className: 'nav-text'
     },
 ]
