@@ -1,9 +1,11 @@
 import React from 'react'
+import { RowSelection } from "../components/Goals/RowSelection.js"
+
 
 function Goals() {
     return (
         <div className='goals'>
-            <h1>Goals</h1>
+            <RowSelection />
         </div>
     )
 }
