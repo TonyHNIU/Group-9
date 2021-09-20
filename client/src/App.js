@@ -3,7 +3,7 @@ import Navbar from './components/Drawer/Navbar'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import home from './pages/Home'
 import goals from './pages/Goal'
-import questionnaire from './pages/Questionnaire'
+import questionnaire from './pages/Questionnaire/Questionnaire'
 import './App.css'
 
 const App = () => {

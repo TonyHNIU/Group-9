@@ -8,8 +8,7 @@
 }
 
 .home,
-.goals,
-.questionnaire {
+.goals {
   display: flex;
   height: 90vh;
   align-items: center;
