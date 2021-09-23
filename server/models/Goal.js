@@ -5,10 +5,10 @@ const goalSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    Very_High_Contribution: {
+    VeryHighContribution: {
         type: "array"
     },
-    High_Contribution: {
+    HighContribution: {
         type: "array"
     }
 });

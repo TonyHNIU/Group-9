@@ -16,5 +16,3 @@ router.post('/', (req, res) => {
       .then(goal => res.json({ msg: 'Goal added successfully' }))
       .catch(err => res.status(400).json({ error: 'Unable to add this goal' }));
   });
-
-  
