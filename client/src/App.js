@@ -9,14 +9,14 @@ import './App.css'
 const App = () => {
   return (
     <>
-    <Router>
-      <Navbar />
+      <Router>
+        <Navbar />
         <Switch>
           <Route path='/' exact component={home} />
           <Route path='/goals' component={goal} />
           <Route path='/questionnaire' component={questionnaire} />
         </Switch>
-    </Router>
+      </Router>
     </>
   )
 }

@@ -2,8 +2,8 @@ import express from 'express'
 
 import { getGoals } from '../controllers/goals.js'
 
-const router = express.Router();
+const router = express.Router()
 
-router.get('/', getGoals);
+router.get('/', getGoals)
 
-export default router;
+export default router

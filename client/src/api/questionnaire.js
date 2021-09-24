@@ -1,6 +1,6 @@
-import axios from 'axios';
+import axios from 'axios'
 
-const url = 'http://localhost:5000/questionnaire';
+const url = 'http://localhost:5000/questionnaire'
 
-export const fetchPosts = () => axios.get(url);
-export const createPost = (newPost) => axios.post(url, newPost);
+export const fetchPosts = () => axios.get(url)
+export const createPost = (newPost) => axios.post(url, newPost)
