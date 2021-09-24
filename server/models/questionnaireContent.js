@@ -36,6 +36,8 @@ const questionnaireSchema = mongoose.Schema({
     question26: String,
     question27: String,
     question271: String,
+    question28: String,
+    question281: String,
     createdAt: {
         type: Date,
         default: new Date()

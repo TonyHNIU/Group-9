@@ -3,7 +3,7 @@ import * as api from '../api/questionnaire';
 //Action Creators
 export const getPosts = () => async (dispatch) => {
     try {
-        const { data } = await  api.fetchPosts();
+        const { data } = await api.fetchPosts();
         dispatch({ type: 'FETCH_ALL', payload: data });
 
     } catch (error) {  

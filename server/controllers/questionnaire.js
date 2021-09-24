@@ -4,8 +4,6 @@ export const getQuestions = async (req, res) => {
     try {
         const getQuestions = await QuestionnaireContent.find();
 
-        console.log(getQuestions);
-
         res.status(200).json(getQuestions);
     } catch (error) {
         res.status(404).json({ message: error.message});
