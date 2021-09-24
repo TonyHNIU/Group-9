@@ -19,15 +19,9 @@ const List = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {!goals.length ? <CircularProgress /> : (
-              <Grid>
-                {goals.map((goal) => (
-                  <Grid key={goal}>
-                    <SubList goal={goal} />
-                  </Grid>
-                ))}
-              </Grid>
-            )}
+            {!goals.length
+              ? <CircularProgress />
+              : (<Grid>{goals.map((goal) => (<Grid key={goal}><SubList goal={goal} /></Grid>))}</Grid>)}
           </TableBody>
         </Table>
       </TableContainer>

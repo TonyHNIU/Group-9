@@ -5,10 +5,8 @@ import { useDispatch } from 'react-redux'
 import { getPosts } from '../../actions/questionnaire'
 // import Posts from '../../components/Questionnaire/Posts/Posts'
 import Form from '../../components/Questionnaire/Form/Form'
-import useStyles from './styles'
 
 const Questionnaire = () => {
-  const classes = useStyles()
   const dispatch = useDispatch()
 
   useEffect(() => {

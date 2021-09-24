@@ -18,15 +18,9 @@ const Popup = (props) => {
         </div>
       </DialogTitle>
       <DialogContent dividers>
-        {!posts.length ? <CircularProgress /> : (
-          <Grid container alignItems='stretch'>
-            {posts.map((post) => (
-              <Grid key={post._id} item>
-                <Post post={post} />
-              </Grid>
-            ))}
-          </Grid>
-        )}
+        {!posts.length
+          ? <CircularProgress />
+          : (<Grid container alignItems='stretch'>{posts.map((post) => (<Grid key={post._id} item><Post post={post} /></Grid>))}</Grid>)}
       </DialogContent>
     </Dialog>
   )
