@@ -34,6 +34,45 @@ const Activities = (props) => {
                         ))
                     }
                 </Clone2>
+                <p>Week 1 - 2</p>
+                <Clone2>
+                    <label>
+                        <Card
+                        id='card-2'
+                        className='card'
+                        draggable='true'
+                        ></Card>
+                        <br />
+                        <br />
+                        <br />
+                    </label>
+                </Clone2>
+                <p>Week 3 - 4</p>
+                <Clone2>
+                    <label>
+                        <Card
+                        id='card-2'
+                        className='card'
+                        draggable='true'
+                        ></Card>
+                        <br />
+                        <br />
+                        <br />
+                    </label>
+                </Clone2>
+                <p>Week 5 - 6</p>
+                <Clone2>
+                    <label>
+                        <Card
+                        id='card-2'
+                        className='card'
+                        draggable='true'
+                        ></Card>
+                        <br />
+                        <br />
+                        <br />
+                    </label>
+                </Clone2>
             </div>
         </Dialog>
     )
