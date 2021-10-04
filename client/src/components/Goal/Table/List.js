@@ -8,11 +8,31 @@ import { Table, List } from '@material-ui/core';
 const Goal = () => {
   const goals = useSelector((state) => state.goals)
 
+  const [selecteds,setSelecteds] = useState([]);
+
+  const onSubmit = async values => {
+    if (values === 'null') {
+      return selecteds;
+    } else {
+      setSelecteds(values);
+    }
+};
+
+const mutiVeryHighArray = selecteds.data?.map((item) => {
+  return item.veryHigh;
+});
+const veryHigh = [...new mutiVeryHighArray.flat()];
+
+const mutiHighArray = selecteds.data?.map((item) => {
+  return item.high;
+});
+const high = [...new mutiHighArray.flat()];
+
   return (
-    <>
-     <div>
+    <div>
       <h3>Goals</h3>
       <Form
+      onSubmit={onSubmit}
       mutators={{
           ...arrayMutators
         }}
@@ -53,15 +73,14 @@ const Goal = () => {
                 Popup
               </button>
             </div>
-            <List>Very High contribution:</List><br />
-            <List>High contribution:</List><br />
+            <List>Very High contribution: {veryHigh.join(', ')}</List><br />
+            <List>High contribution: {high.join(', ')}</List><br />
             <List>Sums:</List>
           </form>
         )}
       />
 
     </div>
-    </>
   )
 }
 
