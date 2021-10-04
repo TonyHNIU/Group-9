@@ -22,11 +22,13 @@ const mutiVeryHighArray = selecteds.data?.map((item) => {
   return item.veryHigh;
 });
 const veryHigh = [...new Set(mutiVeryHighArray?.flat())];
+console.log('hahaha',veryHigh);
 
 const mutiHighArray = selecteds.data?.map((item) => {
   return item.high;
 });
 const high = [...new Set(mutiHighArray?.flat())];
+console.log('hehehe',high);
 
   return (
     <div>
