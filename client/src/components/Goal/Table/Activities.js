@@ -7,6 +7,7 @@ import Clone2 from '../Dnd/Board'
 const Activities = (props) => {
     const { openPopup, setOpenPopup } = props
 
+    const acts = props.sums;
     return (
         <Dialog maxWidth='md' fullScreen>
             <DialogTitle>
@@ -17,7 +18,13 @@ const Activities = (props) => {
             </DialogTitle>
             <div>
                 <Clone2 id='board-1' className='board'>
-
+                    {
+                        acts.map(act => (
+                            <label>
+                                
+                            </label>
+                        ))
+                    }
                 </Clone2>
             </div>
         </Dialog>
