@@ -9,16 +9,16 @@ const Goal = () => {
   const goals = useSelector((state) => state.goals)
 
   const [selecteds,setSelecteds] = useState([]);
+  const [openPopup, setOpenPopup] = useState(false)
 
   const onSubmit = values => {
-    try {
-      setSelecteds(values);
-    } catch (values === 'null') {
+    if (values === 'null') {
       return selecteds;
+    } else {
+      setSelecteds(values);
     }
 };
-console.log('testing onSubmit',values)
-console.log('testing onSubmit2',onSubmit)
+
 const mutiVeryHighArray = selecteds.data?.map((item) => {
   return item.veryHigh;
 });
@@ -71,7 +71,7 @@ const sums = [...new Set(veryHigh.concat(high))];
                 Reset
               </button>
               <button
-              onClick={""}
+              onClick={() => setOpenPopup(true)}
               >
                 Popup
               </button>
