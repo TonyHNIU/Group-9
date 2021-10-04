@@ -8,9 +8,6 @@ const Activities = (props) => {
     const { openPopup, setOpenPopup } = props
 
     const acts = props.sums;
-
-    console.log("object",acts)
-    console.log("object1", openPopup)
     return (
         <Dialog maxWidth='md' fullScreen>
             <DialogTitle>
