@@ -10,14 +10,15 @@ const Goal = () => {
 
   const [selecteds,setSelecteds] = useState([]);
 
-  const onSubmit = async values => {
-    if (values === 'null') {
-      return selecteds;
-    } else {
+  const onSubmit = values => {
+    try {
       setSelecteds(values);
+    } catch (values === 'null') {
+      return selecteds;
     }
 };
-
+console.log('testing onSubmit',values)
+console.log('testing onSubmit2',onSubmit)
 const mutiVeryHighArray = selecteds.data?.map((item) => {
   return item.veryHigh;
 });
