@@ -29,7 +29,6 @@ const mutiHighArray = selecteds.data?.map((item) => {
 const high = [...new Set(mutiHighArray?.flat())];
 
 const sums = [...new Set(veryHigh.concat(high))];
-console.log('nmb',sums)
 
   return (
     <div>
