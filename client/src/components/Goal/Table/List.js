@@ -21,12 +21,12 @@ const Goal = () => {
 const mutiVeryHighArray = selecteds.data?.map((item) => {
   return item.veryHigh;
 });
-const veryHigh = [...new Set(mutiVeryHighArray.flat())];
+const veryHigh = [...new Set(mutiVeryHighArray?.flat())];
 
 const mutiHighArray = selecteds.data?.map((item) => {
   return item.high;
 });
-const high = [...new Set(mutiHighArray.flat())];
+const high = [...new Set(mutiHighArray?.flat())];
 
   return (
     <div>
