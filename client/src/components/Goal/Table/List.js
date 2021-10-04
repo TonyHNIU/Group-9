@@ -22,13 +22,14 @@ const mutiVeryHighArray = selecteds.data?.map((item) => {
   return item.veryHigh;
 });
 const veryHigh = [...new Set(mutiVeryHighArray?.flat())];
-console.log('hahaha',veryHigh);
 
 const mutiHighArray = selecteds.data?.map((item) => {
   return item.high;
 });
 const high = [...new Set(mutiHighArray?.flat())];
-console.log('hehehe',high);
+
+const sums = [...new Set(veryHigh.concat(high))];
+console.log('nmb',sums)
 
   return (
     <div>
@@ -77,7 +78,7 @@ console.log('hehehe',high);
             </div>
             <List>Very High contribution: {veryHigh.join(', ')}</List><br />
             <List>High contribution: {high.join(', ')}</List><br />
-            <List>Sums:</List>
+            <List>Sums: {sums.join(', ')}</List>
           </form>
         )}
       />
