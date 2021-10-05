@@ -10,7 +10,7 @@ const Activities = (props) => {
 
     const acts = props.sums;
     return (
-        <Dialog maxWidth='md' fullScreen>
+        <Dialog open={openPopup} maxWidth='md' fullScreen>
             <DialogTitle>
                 <div>
                     <Typography style={{ flexGrow: 1 }}>Collected Activities here</Typography>
