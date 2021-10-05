@@ -4,13 +4,13 @@ import { useSelector } from 'react-redux'
 import { Form, Field, useField } from 'react-final-form';
 import arrayMutators from 'final-form-arrays';
 import { Table, List } from '@material-ui/core';
+import Activities from './Activities'
 
 const Goal = () => {
   const goals = useSelector((state) => state.goals)
 
   const [selecteds,setSelecteds] = useState([]);
-  const [openPopup, setOpenPopup] = useState(false)
-
+  
   const onSubmit = values => {
     if (values === 'null') {
       return selecteds;
@@ -30,6 +30,8 @@ const mutiHighArray = selecteds.data?.map((item) => {
 const high = [...new Set(mutiHighArray?.flat())];
 
 const sums = [...new Set(veryHigh.concat(high))];
+
+const [openPopup, setOpenPopup] = useState(false)
 
   return (
     <div>
@@ -79,6 +81,7 @@ const sums = [...new Set(veryHigh.concat(high))];
             <List>Very High contribution: {veryHigh.join(', ')}</List><br />
             <List>High contribution: {high.join(', ')}</List><br />
             <List>Sums: {sums.join(', ')}</List>
+            <Activities sums={sums} openPopup={openPopup} setOpenPopup={setOpenPopup} />
           </form>
         )}
       />
