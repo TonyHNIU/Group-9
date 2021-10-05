@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { TextField, Button, Typography, Paper } from '@material-ui/core'
+import { Button, Typography, Paper } from '@material-ui/core'
 import { InputLabel, MenuItem, Select, FormControl } from '@mui/material'
 import { useDispatch } from 'react-redux'
 import Popup from '../Dialog/Dialog'
@@ -9,7 +9,7 @@ import useStyles from './styles'
 import { createPost } from '../../../actions/questionnaire'
 
 const Form = () => {
-  const [postData, setPostData] = useState({ oquestion1: '', oquestion2: '', oquestion3: '', oquestion4: '', oquestion5: '', oquestion6: ''})
+  const [postData, setPostData] = useState({ oquestion1: '', oquestion2: '', oquestion3: '', oquestion4: '', oquestion5: '', oquestion6: '' })
   const [select, setSelect] = useState()
   const classes = useStyles()
   const dispatch = useDispatch()
@@ -21,7 +21,7 @@ const Form = () => {
   }
 
   const clear = () => {
-    setPostData({oquestion1: '', oquestion2: '', oquestion3: '', oquestion4: '', oquestion5: '', oquestion6: ''})
+    setPostData({ oquestion1: '', oquestion2: '', oquestion3: '', oquestion4: '', oquestion5: '', oquestion6: '' })
   }
 
   const [openPopup, setOpenPopup] = useState(false)
@@ -40,7 +40,7 @@ const Form = () => {
           </Button>
           <FormControl fullWidth>
             <InputLabel id='oquestion1'>1. How skilled are you with React?</InputLabel>
-            <Select variant='outlined' label='1. How skilled are you with React?' labelId='oquestion1' value={select} onChange={(e) => { setSelect(e.target.value); setPostData({ ...postData, oquestion1: e.target.value }) }}>
+            <Select variant='outlined' label='1. How skilled are you with React?' labelId='oquestion1' value={select}>
               <MenuItem value='expert'>a. Expert</MenuItem>
               <MenuItem value='proficient'>b. Proficient</MenuItem>
               <MenuItem value='novice'>c. Novice</MenuItem>
@@ -50,7 +50,7 @@ const Form = () => {
           </FormControl>
           <FormControl fullWidth>
             <InputLabel id='oquestion2'>2. How skilled are you with TDD?</InputLabel>
-            <Select variant='outlined' label='2. How skilled are you with TDD?' labelId='oquestion2' value={select} onChange={(e) => { setSelect(e.target.value); setPostData({ ...postData, oquestion2: e.target.value }) }}>
+            <Select variant='outlined' label='2. How skilled are you with TDD?' labelId='oquestion2' value={select}>
               <MenuItem value='expert'>a. Expert</MenuItem>
               <MenuItem value='proficient'>b. Proficient</MenuItem>
               <MenuItem value='novice'>c. Novice</MenuItem>
@@ -60,7 +60,7 @@ const Form = () => {
           </FormControl>
           <FormControl fullWidth>
             <InputLabel id='oquestion3'>3. How skilled are you with TDD?</InputLabel>
-            <Select variant='outlined' label='3. How skilled are you with TDD?' labelId='oquestion3' value={select} onChange={(e) => { setSelect(e.target.value); setPostData({ ...postData, oquestion3: e.target.value }) }}>
+            <Select variant='outlined' label='3. How skilled are you with TDD?' labelId='oquestion3' value={select}>
               <MenuItem value='expert'>a. Expert</MenuItem>
               <MenuItem value='proficient'>b. Proficient</MenuItem>
               <MenuItem value='novice'>c. Novice</MenuItem>
@@ -70,7 +70,7 @@ const Form = () => {
           </FormControl>
           <FormControl fullWidth>
             <InputLabel id='oquestion4'>4. How skilled are you with Mob Programming?</InputLabel>
-            <Select variant='outlined' label='4. How skilled are you with Mob Programming?' labelId='oquestion4' value={select} onChange={(e) => { setSelect(e.target.value); setPostData({ ...postData, oquestion4: e.target.value }) }}>
+            <Select variant='outlined' label='4. How skilled are you with Mob Programming?' labelId='oquestion4' value={select}>
               <MenuItem value='expert'>a. Expert</MenuItem>
               <MenuItem value='proficient'>b. Proficient</MenuItem>
               <MenuItem value='novice'>c. Novice</MenuItem>
@@ -80,7 +80,7 @@ const Form = () => {
           </FormControl>
           <FormControl fullWidth>
             <InputLabel id='oquestion5'>5. How skilled are you with DevOps?</InputLabel>
-            <Select variant='outlined' label='5. How skilled are you with DevOps?' labelId='oquestion5' value={select} onChange={(e) => { setSelect(e.target.value); setPostData({ ...postData, oquestion5: e.target.value }) }}>
+            <Select variant='outlined' label='5. How skilled are you with DevOps?' labelId='oquestion5' value={select}>
               <MenuItem value='expert'>a. Expert</MenuItem>
               <MenuItem value='proficient'>b. Proficient</MenuItem>
               <MenuItem value='novice'>c. Novice</MenuItem>
@@ -90,7 +90,7 @@ const Form = () => {
           </FormControl>
           <FormControl fullWidth>
             <InputLabel id='oquestion6'>6. How skilled are you with CI/CD?</InputLabel>
-            <Select variant='outlined' label='6. How skilled are you with CI/CD?' labelId='oquestion6' value={select} onChange={(e) => { setSelect(e.target.value); setPostData({ ...postData, oquestion6: e.target.value }) }}>
+            <Select variant='outlined' label='6. How skilled are you with CI/CD?' labelId='oquestion6' value={select}>
               <MenuItem value='expert'>a. Expert</MenuItem>
               <MenuItem value='proficient'>b. Proficient</MenuItem>
               <MenuItem value='novice'>c. Novice</MenuItem>

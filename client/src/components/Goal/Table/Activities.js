@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import { useSelector } from 'react-redux'
+import React from 'react'
 import { Dialog, DialogTitle, Button, Typography } from '@material-ui/core'
 import * as AiIcons from 'react-icons/ai'
 import Clone2 from '../Dnd/Board'
@@ -26,6 +25,7 @@ const Activities = (props) => {
                               id='card-1'
                               className='card'
                               draggable='true'
+                              key='card_Id'
                             >
                               {act}
                             </Card>

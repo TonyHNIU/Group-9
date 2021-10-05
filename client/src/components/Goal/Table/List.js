@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 
 import { useSelector } from 'react-redux'
-import { Form, Field, useField } from 'react-final-form'
+import { Form, Field } from 'react-final-form'
 import arrayMutators from 'final-form-arrays'
-import { Table, List } from '@material-ui/core'
+import { List } from '@material-ui/core'
 import Activities from './Activities'
 
 const Goal = () => {
