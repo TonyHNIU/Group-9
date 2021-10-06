@@ -19,5 +19,11 @@ export const SidebarData = [
     path: '/questionnaire',
     icon: <AiIcons.AiOutlineForm />,
     className: 'nav-text'
+  },
+  {
+    title: 'Onboarder Questionnaire',
+    path: '/onboarderquestionnaire',
+    icon: <AiIcons.AiOutlineForm />,
+    className: 'nav-text'
   }
 ]
