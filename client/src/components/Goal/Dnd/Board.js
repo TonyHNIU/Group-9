@@ -3,12 +3,12 @@ import React from 'react'
 function Clone2 (props) {
   const drop = e => {
     e.preventDefault()
-    const card_id = e.dataTransfer.getData('card_Id')
+    // const card_id = e.dataTransfer.getData('card_Id')
 
-    const card = document.getElementById(card_id)
-    card.style.display = 'block'
+    // const card = document.getElementById(card_id)
+    // card.style.display = 'block'
 
-    e.target.appendChild(card)
+    // e.target.appendChild(card)
   }
 
   const dragOver = e => {
