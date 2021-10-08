@@ -10,7 +10,7 @@ import { createPost } from '../../../actions/questionnaire'
 
 const Form = () => {
   const [postData, setPostData] = useState({ oquestion1: '', oquestion2: '', oquestion3: '', oquestion4: '', oquestion5: '', oquestion6: '' })
-  const [select, setSelect] = useState()
+  // const [select, setSelect] = useState()
   const classes = useStyles()
   const dispatch = useDispatch()
 
@@ -40,63 +40,27 @@ const Form = () => {
           </Button>
           <FormControl fullWidth>
             <InputLabel id='oquestion1'>1. How skilled are you with React?</InputLabel>
-            <Select variant='outlined' label='1. How skilled are you with React?' labelId='oquestion1' value={select}>
-              <MenuItem value='expert'>a. Expert</MenuItem>
-              <MenuItem value='proficient'>b. Proficient</MenuItem>
-              <MenuItem value='novice'>c. Novice</MenuItem>
-              <MenuItem value='beginner'>d. Beginner</MenuItem>
-              <MenuItem value='unfamiliar'>e. Unfamiliar</MenuItem>
-            </Select>
+            <Select variant='outlined' label='1. How skilled are you with React?' labelId='oquestion1' />
           </FormControl>
           <FormControl fullWidth>
             <InputLabel id='oquestion2'>2. How skilled are you with TDD?</InputLabel>
-            <Select variant='outlined' label='2. How skilled are you with TDD?' labelId='oquestion2' value={select}>
-              <MenuItem value='expert'>a. Expert</MenuItem>
-              <MenuItem value='proficient'>b. Proficient</MenuItem>
-              <MenuItem value='novice'>c. Novice</MenuItem>
-              <MenuItem value='beginner'>d. beginner</MenuItem>
-              <MenuItem value='unfamiliar'>e. Unfamiliar</MenuItem>
-            </Select>
+            <Select variant='outlined' label='2. How skilled are you with TDD?' labelId='oquestion2' />
           </FormControl>
           <FormControl fullWidth>
             <InputLabel id='oquestion3'>3. How skilled are you with TDD?</InputLabel>
-            <Select variant='outlined' label='3. How skilled are you with TDD?' labelId='oquestion3' value={select}>
-              <MenuItem value='expert'>a. Expert</MenuItem>
-              <MenuItem value='proficient'>b. Proficient</MenuItem>
-              <MenuItem value='novice'>c. Novice</MenuItem>
-              <MenuItem value='beginner'>d. Beginner</MenuItem>
-              <MenuItem value='unfamiliar'>e. Unfamiliar</MenuItem>
-            </Select>
+            <Select variant='outlined' label='3. How skilled are you with TDD?' labelId='oquestion3' />
           </FormControl>
           <FormControl fullWidth>
             <InputLabel id='oquestion4'>4. How skilled are you with Mob Programming?</InputLabel>
-            <Select variant='outlined' label='4. How skilled are you with Mob Programming?' labelId='oquestion4' value={select}>
-              <MenuItem value='expert'>a. Expert</MenuItem>
-              <MenuItem value='proficient'>b. Proficient</MenuItem>
-              <MenuItem value='novice'>c. Novice</MenuItem>
-              <MenuItem value='beginner'>d. Beginner</MenuItem>
-              <MenuItem value='unfamiliar'>e. Unfamiliar</MenuItem>
-            </Select>
+            <Select variant='outlined' label='4. How skilled are you with Mob Programming?' labelId='oquestion4' />
           </FormControl>
           <FormControl fullWidth>
             <InputLabel id='oquestion5'>5. How skilled are you with DevOps?</InputLabel>
-            <Select variant='outlined' label='5. How skilled are you with DevOps?' labelId='oquestion5' value={select}>
-              <MenuItem value='expert'>a. Expert</MenuItem>
-              <MenuItem value='proficient'>b. Proficient</MenuItem>
-              <MenuItem value='novice'>c. Novice</MenuItem>
-              <MenuItem value='beginner'>d. Beginner</MenuItem>
-              <MenuItem value='unfamiliar'>e. Unfamiliar</MenuItem>
-            </Select>
+            <Select variant='outlined' label='5. How skilled are you with DevOps?' labelId='oquestion5' />
           </FormControl>
           <FormControl fullWidth>
             <InputLabel id='oquestion6'>6. How skilled are you with CI/CD?</InputLabel>
-            <Select variant='outlined' label='6. How skilled are you with CI/CD?' labelId='oquestion6' value={select}>
-              <MenuItem value='expert'>a. Expert</MenuItem>
-              <MenuItem value='proficient'>b. Proficient</MenuItem>
-              <MenuItem value='novice'>c. Novice</MenuItem>
-              <MenuItem value='beginner'>d. Beginner</MenuItem>
-              <MenuItem value='unfamiliar'>e. Unfamiliar</MenuItem>
-            </Select>
+            <Select variant='outlined' label='6. How skilled are you with CI/CD?' labelId='oquestion6' />
           </FormControl>
 
           <Button className={classes.buttonSubmit} variant='contained' color='primary' size='small' type='submit' fullWidth>Submit</Button>
