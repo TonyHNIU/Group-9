@@ -67,7 +67,7 @@ const Goal = () => {
               </button>
               <button
                 type='button'
-                onClick=''
+                onClick={form.reset}
                 disabled={submitting || pristine}
               >
                 Reset

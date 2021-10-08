@@ -20,7 +20,7 @@ const Activities = (props) => {
         <Clone2 id='board-1' className='board'>
           {
                         acts.map(act => (
-                          <label key='card_Id'>
+                          <label>
                             <Card
                               id='card-1'
                               className='card'
